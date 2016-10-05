@@ -231,7 +231,7 @@ map.addLayer({
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML('<table border=1><tr><th>Botanical Name</th><th>'+feature.properties.Botanical+'</th></tr><tr><td>Family</td><td>'+feature.properties.Family +'</td></tr><tr><td>District</td><td>'+ feature.properties.District + '</td></tr><tr><td>Coll. Date</td><td>' + feature.properties.Date + '</td></tr><tr><td>Coll. No.</td><td>' + feature.properties.Colection + '</td></tr><tr><td>Rainfall(mm/yr)</td><td>' + feature.properties.rainfall + '</td></tr><tr><td>Dom Soil</td><td>'+ feature.properties.DOMSOI + '</td></tr><tr><td>Fao Soil</td><td>' + feature.properties.FAOSOI + '</td></tr></table>')
+            .setHTML('<table border=1><tr><th>Botanical Name</th><th>'+feature.properties.Botanical+'</th></tr><tr><td>Family</td><td>'+feature.properties.Family +'</td></tr><tr><td>District</td><td>'+ feature.properties.District + '</td></tr><tr><td>Coll. Date</td><td>' + feature.properties.Date + '</td></tr><tr><td>Coll. No.</td><td>' + feature.properties.Collection + '</td></tr><tr><td>Rainfall(mm/yr)</td><td>' + feature.properties.rainfall + '</td></tr><tr><td>Dom Soil</td><td>'+ feature.properties.DOMSOIL + '</td></tr><tr><td>Fao Soil</td><td>' + feature.properties.FAOSOIL + '</td></tr></table>')
             .addTo(map);
 
        // console.log(feature.properties.District);
